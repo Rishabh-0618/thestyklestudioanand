@@ -6,13 +6,6 @@
 
   <title>The Style Studio | Anand</title>
 
-  <meta
-    name="description"
-    content="The Style Studio Anand - Instagram, Facebook, WhatsApp, Google Reviews and UPI payment."
-  >
-
-  <meta name="theme-color" content="#d49a32">
-
   <style>
     * {
       box-sizing: border-box;
@@ -21,29 +14,14 @@
     }
 
     body {
-      min-height: 100vh;
       font-family: Arial, Helvetica, sans-serif;
-
+      min-height: 100vh;
       background:
-        radial-gradient(
-          circle at 15% 10%,
-          #fff0b0 0%,
-          transparent 28%
-        ),
-        radial-gradient(
-          circle at 90% 90%,
-          #b87515 0%,
-          transparent 35%
-        ),
-        linear-gradient(
-          135deg,
-          #fff2bd,
-          #d99a2e 48%,
-          #f6c95c
-        );
-
-      color: #111;
-      padding: 20px 14px 40px;
+        radial-gradient(circle at 15% 10%, #fff0b0 0%, transparent 28%),
+        radial-gradient(circle at 90% 90%, #b87515 0%, transparent 35%),
+        linear-gradient(135deg, #fff2bd, #d99a2e 48%, #f6c95c);
+      color: #171717;
+      padding: 22px 14px;
     }
 
     .container {
@@ -52,411 +30,214 @@
       margin: auto;
     }
 
-    /* =========================
-       HEADER
-    ========================= */
+    /* HEADER */
 
     .header {
-      background:
-        linear-gradient(
-          145deg,
-          #14110d,
-          #282016
-        );
-
-      border-radius: 26px;
-
-      padding: 32px 18px 28px;
-
-      text-align: center;
-
+      background: #111;
       color: white;
-
-      box-shadow:
-        0 15px 45px rgba(0,0,0,.30);
-
-      border: 1px solid rgba(255,215,130,.45);
-
+      border-radius: 24px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.25);
       margin-bottom: 18px;
     }
 
     .brand {
-      font-family: Georgia, serif;
-
-      font-size: clamp(
-        30px,
-        8vw,
-        43px
-      );
-
-      font-weight: 800;
-
-      letter-spacing: 1px;
+      font-size: clamp(30px, 8vw, 48px);
+      font-weight: 900;
+      letter-spacing: 2px;
+      line-height: 1;
     }
 
     .brand span {
-      color: #e2b15a;
+      color: #e7b83d;
     }
 
     .subtitle {
-      margin-top: 10px;
-
-      color: #e7bd70;
-
-      font-size: 15px;
-
-      letter-spacing: 2px;
-
-      font-weight: 600;
+      margin-top: 12px;
+      font-size: 13px;
+      letter-spacing: 3px;
+      color: #ddd;
     }
 
-    /* =========================
-       MAIN CARD
-    ========================= */
+    /* MAIN CARD */
 
     .main-card {
-      background: rgba(
-        255,
-        255,
-        255,
-        .94
-      );
-
-      border-radius: 26px;
-
-      padding: 20px;
-
-      box-shadow:
-        0 15px 45px rgba(
-          100,
-          60,
-          10,
-          .25
-        );
-
-      border: 1px solid
-        rgba(
-          194,
-          139,
-          54,
-          .55
-        );
+      background: rgba(255,255,255,0.94);
+      border-radius: 24px;
+      padding: 22px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.18);
     }
 
     .section-title {
-      font-size: 12px;
-
+      font-size: 15px;
       font-weight: 800;
-
-      letter-spacing: 1.7px;
-
       text-transform: uppercase;
-
-      color: #a26d1d;
-
-      margin:
-        7px 4px 10px;
+      letter-spacing: 1.5px;
+      margin: 8px 2px 12px;
+      color: #6e4b0b;
     }
 
-    .links {
-      display: grid;
-
-      gap: 11px;
-
-      margin-bottom: 23px;
-    }
+    /* LINKS */
 
     .link {
       display: flex;
-
       align-items: center;
-
       text-decoration: none;
-
       color: #111;
-
       background: #fff;
-
-      border-radius: 17px;
-
-      padding: 13px;
-
-      border: 1px solid
-        #ead6ad;
-
-      box-shadow:
-        0 5px 16px
-        rgba(0,0,0,.08);
-
-      transition:
-        transform .2s ease,
-        box-shadow .2s ease;
+      border: 1px solid #e4d2a4;
+      border-radius: 16px;
+      padding: 15px;
+      margin-bottom: 11px;
+      transition: 0.2s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.06);
     }
 
     .link:hover {
-      transform:
-        translateY(-2px);
-
-      box-shadow:
-        0 9px 22px
-        rgba(0,0,0,.14);
+      transform: translateY(-2px);
+      box-shadow: 0 9px 22px rgba(0,0,0,0.12);
+      border-color: #c99627;
     }
 
     .icon {
       width: 45px;
       height: 45px;
-
       min-width: 45px;
-
-      border-radius: 14px;
-
+      border-radius: 13px;
       display: flex;
-
-      justify-content: center;
-
       align-items: center;
-
-      color: white;
-
-      font-size: 21px;
-
-      font-weight: 900;
-
+      justify-content: center;
+      font-size: 22px;
+      font-weight: bold;
       margin-right: 13px;
+      background: #f3e4bd;
     }
 
     .instagram {
-      background:
-        linear-gradient(
-          135deg,
-          #833ab4,
-          #fd1d1d,
-          #fcb045
-        );
+      background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af);
+      color: white;
     }
 
     .facebook {
       background: #1877f2;
+      color: white;
     }
 
     .whatsapp {
       background: #25d366;
+      color: white;
     }
 
     .google {
-      background: #fbbc04;
-      color: #111;
+      background: #4285f4;
+      color: white;
     }
 
     .phone {
-      background: #159447;
+      background: #111;
+      color: #e7b83d;
     }
 
     .link-text {
+      font-weight: 700;
+      font-size: 15px;
       flex: 1;
-
-      font-size: 16px;
-
-      font-weight: 750;
     }
 
     .small {
       display: block;
-
-      margin-top: 3px;
-
-      font-size: 11px;
-
-      font-weight: 500;
-
+      font-size: 12px;
+      font-weight: 400;
       color: #777;
+      margin-top: 4px;
     }
 
     .arrow {
       font-size: 25px;
-
       color: #999;
+      margin-left: 8px;
     }
 
-    /* =========================
-       PAYMENT CARD
-    ========================= */
+    /* PAYMENT */
+
+    .payment {
+      margin-top: 18px;
+      padding-top: 5px;
+    }
 
     .payment-card {
-      background:
-        linear-gradient(
-          145deg,
-          #fffdf7,
-          #fff3cf
-        );
-
-      border: 1px solid
-        #d9ae5d;
-
-      border-radius: 22px;
-
-      padding: 22px 14px;
-
+      background: #111;
+      color: white;
+      border-radius: 20px;
+      padding: 22px;
       text-align: center;
-
-      box-shadow:
-        inset 0 0 30px
-        rgba(220,170,70,.08);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     }
 
-    .gpay-title {
-      font-size: 26px;
-
-      font-weight: 700;
-
-      margin-bottom: 4px;
-
-      color: #333;
-    }
-
-    .business {
-      font-family: Georgia, serif;
-
-      font-size: 21px;
-
-      font-weight: 700;
-
-      color: #222;
-    }
-
-    .pay-number {
-      margin-top: 4px;
-
-      color: #555;
-
-      font-size: 15px;
-    }
-
-    .scan-text {
-      margin-top: 13px;
-
-      font-size: 17px;
-
+    .payment-title {
+      font-size: 20px;
       font-weight: 800;
+      margin-bottom: 5px;
     }
 
-    /* =========================
-       REAL QR IMAGE
-    ========================= */
-
-    .qr-wrapper {
-      background: white;
-
-      border-radius: 15px;
-
-      padding: 12px;
-
-      margin: 17px auto;
-
-      width: min(
-        100%,
-        370px
-      );
-
-      border: 1px solid
-        #d9ae5d;
-
-      box-shadow:
-        0 7px 20px
-        rgba(0,0,0,.10);
+    .payment-subtitle {
+      color: #ccc;
+      font-size: 13px;
+      margin-bottom: 18px;
     }
 
     .qr {
-      width: 100%;
-
+      width: min(270px, 80vw);
+      height: auto;
+      border-radius: 14px;
+      background: white;
+      padding: 10px;
       display: block;
-
-      border-radius: 5px;
+      margin: 0 auto 16px;
     }
 
     .upi {
       font-size: 13px;
-
-      color: #555;
-
+      color: #e7b83d;
       word-break: break-all;
-
-      margin-top: 7px;
+      margin-bottom: 15px;
     }
 
-    .upi strong {
-      color: #111;
-    }
-
-    .upi-button {
+    .pay-button {
       display: inline-block;
-
-      margin-top: 14px;
-
-      background: #171717;
-
-      color: white;
-
+      background: #e7b83d;
+      color: #111;
       text-decoration: none;
-
+      font-weight: 800;
       padding: 13px 22px;
-
-      border-radius: 13px;
-
-      font-weight: 700;
-
-      transition: .2s;
+      border-radius: 12px;
+      transition: 0.2s;
     }
 
-    .upi-button:hover {
-      background: #333;
-
-      transform:
-        translateY(-1px);
+    .pay-button:hover {
+      background: #ffd96a;
+      transform: translateY(-1px);
     }
 
-    /* =========================
-       FOOTER
-    ========================= */
+    /* FOOTER */
 
     .footer {
       text-align: center;
-
-      margin-top: 22px;
-
-      color: #73511d;
-
+      padding: 18px 5px 5px;
       font-size: 11px;
-
-      letter-spacing: .5px;
+      letter-spacing: 1.5px;
+      color: #6c4b12;
+      font-weight: 700;
     }
 
-    /* =========================
-       MOBILE
-    ========================= */
-
     @media (max-width: 400px) {
-
-      body {
-        padding:
-          12px 9px 30px;
-      }
-
       .main-card {
-        padding: 14px;
+        padding: 16px;
       }
 
       .header {
-        padding:
-          27px 14px;
-      }
-
-      .brand {
-        font-size: 29px;
-      }
-
-      .subtitle {
-        font-size: 12px;
+        padding: 25px 15px;
       }
     }
   </style>
@@ -464,42 +245,30 @@
 
 <body>
 
-<div class="container">
+  <div class="container">
 
-  <!-- =========================
-       HEADER
-  ========================= -->
+    <!-- HEADER -->
 
-  <header class="header">
+    <div class="header">
+      <div class="brand">
+        THE <span>STYLE</span> STUDIO
+      </div>
 
-    <div class="brand">
-      THE <span>STYLE</span> STUDIO
+      <div class="subtitle">
+        ANAND • CONNECT WITH US
+      </div>
     </div>
 
-    <div class="subtitle">
-      ANAND • CONNECT WITH US
-    </div>
 
-  </header>
+    <!-- MAIN -->
 
+    <div class="main-card">
 
-  <!-- =========================
-       MAIN
-  ========================= -->
+      <!-- SOCIAL -->
 
-  <main class="main-card">
-
-
-    <!-- CONNECT -->
-
-    <div class="section-title">
-      Connect With Us
-    </div>
-
-    <div class="links">
-
-
-      <!-- INSTAGRAM -->
+      <div class="section-title">
+        Connect With Us
+      </div>
 
       <a
         class="link"
@@ -507,29 +276,20 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-
         <div class="icon instagram">
           ◎
         </div>
 
         <div class="link-text">
-
           Instagram
-
           <span class="small">
-            @thestylestudioanand
+            Follow The Style Studio
           </span>
-
         </div>
 
-        <div class="arrow">
-          ›
-        </div>
-
+        <div class="arrow">›</div>
       </a>
 
-
-      <!-- FACEBOOK -->
 
       <a
         class="link"
@@ -537,29 +297,20 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-
         <div class="icon facebook">
           f
         </div>
 
         <div class="link-text">
-
           Facebook
-
           <span class="small">
-            The Style Studio Anand
+            Follow us on Facebook
           </span>
-
         </div>
 
-        <div class="arrow">
-          ›
-        </div>
-
+        <div class="arrow">›</div>
       </a>
 
-
-      <!-- WHATSAPP COMMUNITY -->
 
       <a
         class="link"
@@ -567,29 +318,20 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-
         <div class="icon whatsapp">
-          ◔
+          ◉
         </div>
 
         <div class="link-text">
-
           WhatsApp Community
-
           <span class="small">
-            Join our community
+            Join our WhatsApp community
           </span>
-
         </div>
 
-        <div class="arrow">
-          ›
-        </div>
-
+        <div class="arrow">›</div>
       </a>
 
-
-      <!-- GOOGLE REVIEWS -->
 
       <a
         class="link"
@@ -597,72 +339,52 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-
         <div class="icon google">
-          ★
+          G
         </div>
 
         <div class="link-text">
-
           Google Reviews
-
           <span class="small">
             Review The Style Studio
           </span>
-
         </div>
 
-        <div class="arrow">
-          ›
-        </div>
-
+        <div class="arrow">›</div>
       </a>
 
-    </div>
+
+      <!-- DIRECT CONTACT -->
+
+      <div class="section-title">
+        Direct Contact
+      </div>
 
 
-    <!-- =========================
-         DIRECT CONTACT
-    ========================= -->
-
-    <div class="section-title">
-      Direct Contact
-    </div>
-
-    <div class="links">
-
-
-      <!-- NUMBER 1 -->
+      <!-- GOPI -->
 
       <a
         class="link"
-        href="https://wa.me/918155855417"
+        href="https://wa.me/918401888080"
         target="_blank"
         rel="noopener noreferrer"
       >
-
         <div class="icon phone">
           ☎
         </div>
 
         <div class="link-text">
-
-          WhatsApp / Message
-
+          Gopi Patadiya
           <span class="small">
-            +91 81558 55417
+            +91 84018 88080 • WhatsApp
           </span>
-
         </div>
 
-        <div class="arrow">
-          ›
-        </div>
-
+        <div class="arrow">›</div>
       </a>
 
 
-      <!-- NUMBER 2 -->
+      <!-- CHANDANI -->
 
       <a
         class="link"
@@ -670,141 +392,69 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-
         <div class="icon phone">
           ☎
         </div>
 
         <div class="link-text">
-
-          WhatsApp / Message
-
+          Chandani Soni
           <span class="small">
-            +91 94278 58693
+            +91 94278 58693 • WhatsApp
           </span>
-
         </div>
 
-        <div class="arrow">
-          ›
-        </div>
-
+        <div class="arrow">›</div>
       </a>
 
-    </div>
 
+      <!-- PAYMENT -->
 
-    <!-- =========================
-         PAYMENT
-    ========================= -->
+      <div class="payment">
 
-    <div class="section-title">
-      Pay Us
-    </div>
+        <div class="section-title">
+          Pay Us
+        </div>
 
-    <div class="payment-card">
+        <div class="payment-card">
 
+          <div class="payment-title">
+            Pay via UPI
+          </div>
 
-      <div class="gpay-title">
-        Google Pay
-      </div>
+          <div class="payment-subtitle">
+            Scan the QR code to make a payment
+          </div>
 
+          <img
+            src="./gpay-qr.png"
+            alt="The Style Studio UPI Payment QR"
+            class="qr"
+            onerror="this.style.display='none';"
+          >
 
-      <div class="business">
-        The Style Studio
-      </div>
+          <div class="upi">
+            UPI ID: 8155855417@okbizaxis
+          </div>
 
-
-      <div class="pay-number">
-        +91 81558 55417
-      </div>
-
-
-      <div class="scan-text">
-        Scan & Pay
-      </div>
-
-
-      <!--
-        IMPORTANT:
-
-        Keep gpay-qr.png in the SAME folder
-        as this index.html.
-
-        GitHub repository:
-
-        thestyklestudioanand/
-        ├── index.html
-        └── gpay-qr.png
-      -->
-
-      <div class="qr-wrapper">
-
-        <img
-          src="./gpay-qr.png"
-          alt="The Style Studio UPI Payment QR"
-          class="qr"
-          onerror="this.style.display='none'; document.getElementById('qr-error').style.display='block';"
-        >
-
-        <div
-          id="qr-error"
-          style="
-            display:none;
-            padding:40px 10px;
-            color:#b00020;
-            font-size:14px;
-          "
-        >
-
-          QR image not found.
-
-          <br><br>
-
-          Upload
-          <strong>gpay-qr.png</strong>
-          to the same GitHub folder as
-          <strong>index.html</strong>.
+          <a
+            class="pay-button"
+            href="upi://pay?pa=8155855417@okbizaxis&pn=The%20Style%20Studio&cu=INR"
+          >
+            Open UPI Payment
+          </a>
 
         </div>
 
       </div>
 
-
-      <div class="upi">
-
-        UPI ID:
-
-        <strong>
-          8155855417@okbizaxis
-        </strong>
-
-      </div>
-
-
-      <!-- DIRECT UPI PAYMENT -->
-
-      <a
-        class="upi-button"
-        href="upi://pay?pa=8155855417@okbizaxis&pn=The%20Style%20Studio&cu=INR"
-      >
-
-        Open UPI Payment
-
-      </a>
-
     </div>
 
-  </main>
 
-
-  <div class="footer">
-
-    SCAN ONCE • CHOOSE WHAT YOU WANT TO DO
+    <div class="footer">
+      SCAN ONCE • CHOOSE WHAT YOU WANT TO DO
+    </div>
 
   </div>
-
-</div>
 
 </body>
 </html>
